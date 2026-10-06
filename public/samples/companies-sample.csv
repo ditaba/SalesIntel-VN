@@ -1,0 +1,10 @@
+company_name,tax_code,industry,province,address,website,employee_range
+Công ty TNHH Nha khoa Sài Gòn Smile,0318765432,Dental clinic,TP.HCM,"215 Nguyễn Thị Minh Khai, District 3",saigonsmile-demo.vn,25
+Công ty TNHH Bánh Ngọt Hà Thành,0109876543,Bakery,Ha Noi,"12 Hàng Bông, Hoan Kiem",,8
+Công ty Cổ phần Bao bì Đông Nam,3701234999,Packaging manufacturer,Binh Duong,"KCN VSIP 2, Thu Dau Mot",https://dongnam-pack-demo.com.vn/,120-180
+Hộ kinh doanh Spa Hoa Sen,,Spa,Da Nang,"45 Bạch Đằng, Hai Chau",none,1-10
+Công ty TNHH Logistics Cảng Xanh,0201112223,logistics,Hai Phong,"Lô 5, KCN Đình Vũ",cangxanh-demo.vn,51-200
+Công ty TNHH Nha khoa Sài Gòn Smile,0318765432,Healthcare / Clinic,Ho Chi Minh City,"215 Nguyễn Thị Minh Khai, District 3",saigonsmile-demo.vn,11-50
+,0312223334,Retail,Ho Chi Minh City,"No name row",,11-50
+Công ty TNHH Phần mềm Lạc Hồng,12345,Software,Can Tho,"Ninh Kieu",lachong-soft-demo.vn,11-50
+Công ty TNHH Du lịch Biển Xanh,0401239876,Unknown industry xyz,Da Nang,"Son Tra",,11-50
