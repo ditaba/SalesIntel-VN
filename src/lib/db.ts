@@ -1,12 +1,17 @@
 import Database from "better-sqlite3";
 import fs from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import { SCHEMA_SQL } from "./schema";
 
 const globalForDb = globalThis as unknown as { __salesintelDb?: Database.Database };
 
 export function dbPath(): string {
-  return process.env.DATABASE_PATH || path.join(process.cwd(), "data", "salesintel.db");
+  if (process.env.DATABASE_PATH) return process.env.DATABASE_PATH;
+  // Serverless platforms (Vercel) mount the app read-only; only the OS temp dir is writable.
+  // The DB there is ephemeral: re-seeded on each cold start and not shared between instances.
+  if (process.env.VERCEL) return path.join(os.tmpdir(), "salesintel.db");
+  return path.join(process.cwd(), "data", "salesintel.db");
 }
 
 /** Open (and on first use, create + seed) the SQLite database. */
